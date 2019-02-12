@@ -1,0 +1,84 @@
+#divHeader {
+    height:10vh;
+    color:white;
+    background-color: black;
+}
+
+#divMap {
+    height:80vh;
+    background-color: whitesmoke;
+}
+
+#divFooter {
+    height:10vh;
+    color:whitesmoke;
+    background-color: black
+    ;
+}
+
+#divCross {
+    z-index:2000;
+    color:red;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-11px;
+    margin-left:-11px;
+}
+
+.btn {
+    margin-top:20%;
+}
+
+.btn-no-top-margin {
+    margin-top:0;
+}
+
+.setting-label {
+    margin-top:12%;
+    margin-bottom:12%;
+}
+
+.table-header {
+    background-color: whitesmoke;
+}
+
+    /* Modal Content */
+    .modal {
+        z-index:2001;
+        height:90%;
+        width:100%;
+        display:none;
+        overflow-y:auto;
+        background-color: whitesmoke;
+        color: black; 
+    }
+
+    .sub-header {
+        color: whitesmoke;
+        background-color: black; 
+        padding:3px;
+    }
+
+    /*    Slider */
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        background-color: black;
+        height: 10px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        position: relative;
+        top: -1px;
+        z-index: 1;
+        width: 35px;
+        height: 35px;
+
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        border-radius: 40px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaa), color-stop(50%,black), color-stop(100%,#aaa));
+    }  
+

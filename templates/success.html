@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Image Captioning App">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Generic Data Collection</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/leaflet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/plugins/Leaflet.PolylineMeasure.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/plugins/easy-button.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/plugins/leaflet.awesome-markers.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/plugins/MarkerCluster.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='src/plugins/MarkerCluster.Default.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='generic_mobile_resources/css_generic_mobile.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='generic_mobile_resources/app.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='generic_mobile_resources/new-age.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='generic_mobile_resources/new-age.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+
+        <script src="{{ url_for('static', filename='src/leaflet.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/Leaflet.PolylineMeasure.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/easy-button.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/leaflet-providers.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/leaflet.awesome-markers.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/leaflet.markercluster.js') }}"></script>
+        <script src="{{ url_for('static', filename='src/plugins/leaflet.geometryutil.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/general_functions.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/general_editing.js') }}"></script>
+        <script src="{{ url_for('static', filename='generic_mobile_resources/js_generic_mobile.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/capture.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/new-age.min.js') }}"></script>
+
+    </head>
+
+<body>
+        <header class="masthead">
+
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-4 my-auto">
+                            <div class="container">
+                                <img src= {{content}} class="img-responsive" alt="content" style="height: auto; width:auto">
+                                <label>Content Image</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-auto ">
+                            <div class="container">
+                                <img src= {{style}} class="img-responsive" alt="style" style="height: auto; width: auto">
+                                <label>Style Image</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-auto ">
+                            <div class="container">
+                                <img src= {{result}} class="img-responsive" style="height: auto; width: auto" alt="result">
+                                <label>Generated Image</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+</body>
+</html>
